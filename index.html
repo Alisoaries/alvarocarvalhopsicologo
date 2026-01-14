@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvaro Carvalho Psicólogo | Terapia Online | CRP 06/176449</title>
+    <meta name="description" content="Psicólogo clínico especializado em ansiedade, depressão e sobrecarga emocional. Atendimento online com ética e sigilo. Agende sua consulta - CRP 06/176449">
+    <meta name="keywords" content="psicólogo online, terapia online, ansiedade, depressão, psicoterapia, fenomenologia, CRP 06/176449, Alvaro Carvalho">
+    <meta name="author" content="Alvaro Maximiano de Carvalho Júnior">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alvarocarvalhopsicologo.com.br">
+    <meta property="og:title" content="Alvaro Carvalho Psicólogo | Terapia Online">
+    <meta property="og:description" content="Psicólogo clínico especializado em ansiedade, depressão e sobrecarga emocional. Atendimento online com ética e sigilo profissional.">
+    <meta property="og:image" content="https://alvarocarvalhopsicologo.com.br/alvaro-psicologo.jpeg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alvaro Carvalho Psicólogo | Terapia Online">
+    <meta name="twitter:description" content="Psicólogo clínico especializado em ansiedade, depressão e sobrecarga emocional. Atendimento online.">
+    <meta name="twitter:image" content="https://alvarocarvalhopsicologo.com.br/alvaro-psicologo.jpeg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECJQ5S7FHR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ECJQ5S7FHR');
+    </script>
+
+    <!-- Meta Pixel Code - Replace YOUR_PIXEL_ID with your actual Facebook Pixel ID -->
+    <!--
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    -->
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --primary-bg: #F4EFDB;
+            --text-dark: #3B1512;
+            --accent-green: #6A7700;
+            --accent-light: #8FA500;
+            --white: #ffffff;
+            --light-green: rgba(106, 119, 0, 0.1);
+            --shadow: rgba(59, 21, 18, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--primary-bg);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-bg) 0%, #f0e8d0 100%);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            color: var(--accent-green);
+        }
+        
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .whatsapp-btn {
+            background: var(--accent-green);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(106, 119, 0, 0.3);
+        }
+        
+        .whatsapp-btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(106, 119, 0, 0.4);
+            color: white;
+        }
+        
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+        
+        .problem-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--accent-green);
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .problem-icon {
+            font-size: 3rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        .problem-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .benefit-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .about-section {
+            background: var(--white);
+        }
+        
+        .psychologist-photo {
+            border-radius: 20px;
+            box-shadow: 0 15px 40px var(--shadow);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-light) 100%);
+            color: white;
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .brain-tree-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: var(--accent-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .hero-thumbnail {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 1.5rem auto;
+            display: block;
+            box-shadow: 0 8px 25px var(--shadow);
+            border: 4px solid var(--white);
+        }
+
+        .instagram-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .instagram-link:hover {
+            background: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            color: #E4405F; /* Instagram brand color */
+        }
+
+        .instagram-link i {
+            font-size: 1.3rem;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--accent-green);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+        
+        .stats-section {
+            background: var(--light-green);
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--accent-green);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-top: 0.5rem;
+        }
+        
+        /* Modal Styles */
+        .booking-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(59, 21, 18, 0.8);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content-booking {
+            background-color: var(--white);
+            margin: 3% auto;
+            padding: 0;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            animation: slideDown 0.4s ease;
+            position: relative;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-light) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light-green);
+        }
+
+        .modal-section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 1rem;
+        }
+
+        .modal-section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-section-title i {
+            font-size: 1.5rem;
+        }
+
+        .price-highlight {
+            background: var(--light-green);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .price-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .modal-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .modal-list li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .modal-list li i {
+            position: absolute;
+            left: 0;
+            top: 0.8rem;
+            color: var(--accent-green);
+            font-size: 1.2rem;
+        }
+
+        .step-number {
+            background: var(--accent-green);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .modal-btn-primary {
+            flex: 1;
+            min-width: 200px;
+            background: var(--accent-green);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .modal-btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(106, 119, 0, 0.3);
+            color: white;
+        }
+
+        .modal-btn-secondary {
+            flex: 1;
+            min-width: 200px;
+            background: white;
+            color: var(--accent-green);
+            padding: 1rem 2rem;
+            border: 2px solid var(--accent-green);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .modal-btn-secondary:hover {
+            background: var(--light-green);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .whatsapp-btn {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+
+            .modal-content-booking {
+                width: 95%;
+                margin: 5% auto;
+            }
+
+            .modal-body {
+                padding: 1.5rem;
+            }
+
+            .modal-buttons {
+                flex-direction: column;
+            }
+
+            .modal-btn-primary,
+            .modal-btn-secondary {
+                width: 100%;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="brain-tree-icon">
+                        <i class="bi bi-tree"></i>
+                    </div>
+                    <h1 class="hero-title">Alvaro Carvalho</h1>
+                    <p class="hero-subtitle">Psicólogo Clínico - CRP 06/176449</p>
+                    <img src="alvaro-thumb.jpg" alt="Alvaro Carvalho - Psicólogo" class="hero-thumbnail">
+                    <a href="https://www.instagram.com/alvarocarvalho.psi/" target="_blank" rel="noopener noreferrer" class="instagram-link" id="heroInstagramLink">
+                        <i class="bi bi-instagram"></i>
+                        @alvarocarvalho.psi
+                    </a>
+                    <p class="hero-description">Psicólogo dedicado a ajudar pessoas a encontrarem equilíbrio emocional e qualidade de vida. Atendimento online com ética, empatia e sigilo profissional.</p>
+                    <a href="#" class="whatsapp-btn booking-trigger" data-location="hero_button">
+                        <i class="bi bi-calendar-check"></i>
+                        Agende sua Consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="alvaro-psicologo.jpeg" alt="Alvaro Maximiano de Carvalho Júnior - Psicólogo CRP 06/176449" class="img-fluid psychologist-photo">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Sobre mim</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;"><strong>Alvaro Maximiano de Carvalho Júnior</strong></p>
+                    <p style="font-size: 1rem; margin-bottom: 1rem; color: var(--accent-green); font-weight: 500;">Psicólogo Clínico - CRP 06/176449</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Sou psicólogo clínico com experiência no atendimento de pessoas que sofrem com ansiedade, depressão, insegurança, baixa autoestima e sobrecarga emocional.</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">Meu objetivo é te ajudar a lidar melhor com seus sentimentos, conquistar equilíbrio emocional e viver com mais leveza. Proporciono um espaço seguro para que você possa se expressar e superar seus desafios.</p>
+                    
+                    <div style="background: var(--light-green); padding: 1.5rem; border-radius: 15px; margin-bottom: 2rem;">
+                        <h4 style="color: var(--accent-green); margin-bottom: 1rem;"><i class="bi bi-award" style="margin-right: 10px;"></i>Especialização</h4>
+                        <p style="margin: 0; font-weight: 500;">Pós graduado em Saúde Mental</p>
+                    </div>
+                    
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;"><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 10px;"></i>Atendimento online personalizado</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 10px;"></i>Ética e sigilo profissional</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 10px;"></i>Abordagem empática e acolhedora</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="bi bi-check-circle-fill" style="color: var(--accent-green); margin-right: 10px;"></i>Foco no bem-estar e qualidade de vida</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Support Banner -->
+    <section style="background: linear-gradient(135deg, #8B9B00 0%, var(--accent-green) 100%); padding: 3rem 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div style="background: rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.3);">
+                        <div style="display: inline-block; background: white; width: 60px; height: 60px; border-radius: 50%; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-heart-pulse" style="font-size: 2rem; color: var(--accent-green);"></i>
+                        </div>
+                        <h3 style="color: white; font-size: 1.8rem; margin-bottom: 1rem; font-weight: 600;">Apoio Psicológico para o Rio de Janeiro</h3>
+                        <p style="color: white; font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.95;">Você foi afetado pela tragédia no Rio? Oferecemos apoio psicológico acessível para pessoas impactadas pela violência no Complexo do Alemão, Penha e regiões próximas.</p>
+                        <a href="apoio-rio.html" style="background: white; color: var(--accent-green); padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.2)';">
+                            <i class="bi bi-arrow-right-circle"></i>
+                            Saiba Mais sobre o Apoio Comunitário
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Você sente que...</h2>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6">
+                    <div class="problem-card">
+                        <i class="bi bi-heart-pulse problem-icon"></i>
+                        <h3 class="problem-title">A ansiedade tem atrapalhado seu dia a dia?</h3>
+                        <p>Sentimentos de preocupação excessiva, tensão e nervosismo que interferem nas suas atividades cotidianas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="problem-card">
+                        <i class="bi bi-briefcase problem-icon"></i>
+                        <h3 class="problem-title">Está sobrecarregado com trabalho e responsabilidades?</h3>
+                        <p>A pressão do trabalho e das obrigações diárias está causando estresse e esgotamento emocional.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="problem-card">
+                        <i class="bi bi-moon problem-icon"></i>
+                        <h3 class="problem-title">Tem dificuldade em relaxar e descansar?</h3>
+                        <p>Problemas para "desligar" a mente, relaxar verdadeiramente ou ter um sono reparador.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="problem-card">
+                        <i class="bi bi-person-x problem-icon"></i>
+                        <h3 class="problem-title">Sofre com insegurança, baixa autoestima ou pensamentos acelerados?</h3>
+                        <p>Sentimentos de inadequação, autocrítica excessiva e mente que não para de pensar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p style="font-size: 1.2rem; font-weight: 500; color: var(--accent-green);">👉 Se respondeu sim a alguma dessas perguntas, a psicoterapia pode te ajudar!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Benefícios da Psicoterapia</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <i class="bi bi-shield-check benefit-icon"></i>
+                        <h3 class="benefit-title">Redução da ansiedade e estresse</h3>
+                        <p>Aprenda técnicas eficazes para gerenciar a ansiedade e reduzir o estresse do dia a dia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <i class="bi bi-lightbulb benefit-icon"></i>
+                        <h3 class="benefit-title">Autoconhecimento e fortalecimento emocional</h3>
+                        <p>Desenvolva uma compreensão mais profunda de si mesmo e fortaleça sua inteligência emocional.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <i class="bi bi-compass benefit-icon"></i>
+                        <h3 class="benefit-title">Mais clareza nas decisões</h3>
+                        <p>Ganhe perspectiva e confiança para tomar decisões importantes em sua vida.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <i class="bi bi-heart benefit-icon"></i>
+                        <h3 class="benefit-title">Qualidade de vida e bem-estar</h3>
+                        <p>Conquiste equilíbrio emocional e viva com mais leveza e satisfação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-padding" style="background: var(--light-green);">
+        <div class="container">
+            <h2 class="section-title">Como Funciona o Atendimento Online</h2>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card" style="border-top: 4px solid var(--accent-green);">
+                        <i class="bi bi-camera-video benefit-icon"></i>
+                        <h3 class="benefit-title">100% Online</h3>
+                        <p>Atendimento por videochamada via Google Meet ou Zoom, no conforto da sua casa.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card" style="border-top: 4px solid var(--accent-green);">
+                        <i class="bi bi-clock-history benefit-icon"></i>
+                        <h3 class="benefit-title">Sessões de 50min</h3>
+                        <p>Tempo adequado para um atendimento de qualidade e aprofundamento terapêutico.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card" style="border-top: 4px solid var(--accent-green);">
+                        <i class="bi bi-currency-dollar benefit-icon"></i>
+                        <h3 class="benefit-title">Investimento</h3>
+                        <p><strong style="font-size: 1.5rem; color: var(--accent-green);">à combinar</strong><br>por sessão</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card" style="border-top: 4px solid var(--accent-green);">
+                        <i class="bi bi-chat-dots benefit-icon"></i>
+                        <h3 class="benefit-title">Resposta em 24h</h3>
+                        <p>Dúvidas via WhatsApp respondidas em até 24 horas úteis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fenomenologia Explanation -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10">
+                    <div class="approach-section" style="background: var(--white); padding: 3rem; border-radius: 20px; box-shadow: 0 10px 30px var(--shadow); border-left: 6px solid var(--accent-green);">
+                        <h3 style="color: var(--accent-green); font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1.5rem;">
+                            <i class="bi bi-lightbulb" style="margin-right: 10px;"></i>
+                            O que é a Abordagem Fenomenológica?
+                        </h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                            A <strong>Fenomenologia</strong> é uma abordagem terapêutica que valoriza sua experiência única e subjetiva.
+                            Não uso "receitas prontas" - cada pessoa é vista em sua singularidade. Foco em entender
+                            <strong>como VOCÊ</strong> vive suas emoções, angústias e desafios, para então ajudá-lo a encontrar seus
+                            próprios caminhos de transformação.
+                        </p>
+
+                        <div style="background: var(--light-green); padding: 1.5rem; border-radius: 12px; margin-top: 1.5rem;">
+                            <h4 style="color: var(--accent-green); margin-bottom: 1rem; font-weight: 600;">
+                                Na prática, isso significa:
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--accent-green); position: absolute; left: 0; top: 4px;"></i>
+                                    <strong>Escuta atenta e sem julgamentos</strong> - Um espaço seguro para se expressar
+                                </li>
+                                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--accent-green); position: absolute; left: 0; top: 4px;"></i>
+                                    <strong>Foco na sua experiência</strong> - Não em diagnósticos rígidos ou rótulos
+                                </li>
+                                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--accent-green); position: absolute; left: 0; top: 4px;"></i>
+                                    <strong>Compreensão profunda</strong> - Do seu contexto de vida e relações
+                                </li>
+                                <li style="margin-bottom: 0; padding-left: 1.5rem; position: relative;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--accent-green); position: absolute; left: 0; top: 4px;"></i>
+                                    <strong>Respeito ao seu tempo</strong> - Cada pessoa tem seu próprio ritmo de mudança
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title" style="color: white;">Pronto para começar sua jornada de autoconhecimento?</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Não espere mais para cuidar da sua saúde mental. Agende sua primeira consulta e dê o primeiro passo em direção ao equilíbrio emocional e bem-estar.</p>
+                    <a href="#" class="whatsapp-btn booking-trigger" style="background: white; color: var(--accent-green); font-size: 1.3rem; padding: 20px 50px;" data-location="cta_button">
+                        <i class="bi bi-calendar-check"></i>
+                        Agende Agora
+                    </a>
+                    <div style="margin-top: 2rem; opacity: 0.8;">
+                        <a href="https://wa.me/5511961163538?text=Olá! Gostaria de saber mais sobre psicoterapia online." class="whatsapp-btn" style="padding: 20px 50px; margin-bottom: 2rem;"><i class="bi bi-whatsapp" style="margin-right: 8px;"></i>(11) 9 6116-3538</a>
+                        <p><i class="bi bi-clock" style="margin-right: 8px;"></i>Atendimento online • Horários flexíveis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Calendar Button -->
+    <a href="#" class="floating-whatsapp booking-trigger" data-location="floating_button">
+        <i class="bi bi-calendar-check"></i>
+    </a>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="booking-modal">
+        <div class="modal-content-booking">
+            <div class="modal-header">
+                <button class="modal-close" id="closeModal">&times;</button>
+                <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 2rem;">
+                    <i class="bi bi-calendar-check"></i> Antes de Agendar
+                </h2>
+                <p style="margin: 0.5rem 0 0 0; opacity: 0.95; font-size: 1.1rem;">Veja como funciona o atendimento online</p>
+            </div>
+
+            <div class="modal-body">
+                <!-- Pricing Section -->
+                <div class="modal-section">
+                    <h3 class="modal-section-title">
+                        <i class="bi bi-currency-dollar"></i>
+                        Investimento
+                    </h3>
+                    <div class="price-highlight">
+                        <div class="price-value">à combinar</div>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 1.1rem; color: var(--text-dark);">por sessão de 50 minutos</p>
+                    </div>
+                    <p style="margin: 0; text-align: center; color: var(--text-dark); opacity: 0.8;">
+                        <i class="bi bi-info-circle"></i> Pagamento via PIX após confirmação do agendamento
+                    </p>
+                </div>
+
+                <!-- Format Section -->
+                <div class="modal-section">
+                    <h3 class="modal-section-title">
+                        <i class="bi bi-camera-video"></i>
+                        Formato do Atendimento
+                    </h3>
+                    <ul class="modal-list">
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <strong>100% online</strong> via Google Meet ou Zoom
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Você recebe o <strong>link da videochamada por email</strong> após agendar
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            É necessário ter o app <strong>Google Meet ou Zoom instalado</strong>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Sessões de <strong>50 minutos</strong> com privacidade e sigilo total
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- How It Works Section -->
+                <div class="modal-section">
+                    <h3 class="modal-section-title">
+                        <i class="bi bi-list-check"></i>
+                        Como Funciona o Processo
+                    </h3>
+                    <ul class="modal-list" style="padding-left: 0;">
+                        <li style="padding-left: 3rem;">
+                            <span class="step-number" style="position: absolute; left: 0;">1</span>
+                            <strong>Escolha data e horário</strong> no calendário
+                        </li>
+                        <li style="padding-left: 3rem;">
+                            <span class="step-number" style="position: absolute; left: 0;">2</span>
+                            <strong>Receba confirmação por email</strong> com link da videochamada
+                        </li>
+                        <li style="padding-left: 3rem;">
+                            <span class="step-number" style="position: absolute; left: 0;">3</span>
+                            <strong>15 minutos antes:</strong> Teste sua câmera, microfone e internet
+                        </li>
+                        <li style="padding-left: 3rem;">
+                            <span class="step-number" style="position: absolute; left: 0;">4</span>
+                            <strong>Na hora marcada:</strong> Clique no link e entre na consulta
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Requirements Section -->
+                <div class="modal-section">
+                    <h3 class="modal-section-title">
+                        <i class="bi bi-gear"></i>
+                        O Que Você Precisa
+                    </h3>
+                    <ul class="modal-list">
+                        <li>
+                            <i class="bi bi-laptop"></i>
+                            Computador, tablet ou celular
+                        </li>
+                        <li>
+                            <i class="bi bi-wifi"></i>
+                            Conexão de internet estável
+                        </li>
+                        <li>
+                            <i class="bi bi-house-door"></i>
+                            Local privado e tranquilo
+                        </li>
+                        <li>
+                            <i class="bi bi-headphones"></i>
+                            Fone de ouvido (recomendado para mais privacidade)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Questions Section -->
+                <div style="background: var(--light-green); padding: 1.5rem; border-radius: 12px; text-align: center; margin-bottom: 1rem;">
+                    <p style="margin: 0; font-size: 1.1rem; color: var(--text-dark);">
+                        <i class="bi bi-chat-dots" style="color: var(--accent-green); font-size: 1.3rem;"></i>
+                        <strong>Ficou com dúvidas?</strong><br>
+                        Entre em contato pelo WhatsApp: <strong>(11) 9 6116-3538</strong>
+                    </p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="modal-buttons">
+                    <a href="https://calendly.com/alvarojr1994/atendimento-padrao" class="modal-btn-primary" id="proceedToBooking">
+                        <i class="bi bi-calendar-check"></i>
+                        Continuar para Agendamento
+                    </a>
+                    <a href="https://wa.me/5511961163538?text=Olá! Gostaria de saber mais sobre as consultas online." class="modal-btn-secondary" id="contactWhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Alvaro Carvalho Psicólogo",
+        "image": "https://alvarocarvalhopsicologo.com.br/alvaro-psicologo.jpeg",
+        "description": "Psicólogo clínico especializado em ansiedade, depressão e sobrecarga emocional. Atendimento online com ética e sigilo profissional.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "telephone": "+5511961163538",
+        "priceRange": "$$",
+        "areaServed": "BR",
+        "serviceType": "Psicoterapia Online",
+        "provider": {
+            "@type": "Person",
+            "name": "Alvaro Maximiano de Carvalho Júnior",
+            "jobTitle": "Psicólogo Clínico",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Alvaro Carvalho Psicólogo"
+            }
+        }
+    }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // UTM Parameter Tracking - Capture and forward to Calendly
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const utmParams = {};
+
+            // Capture all UTM parameters
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(param => {
+                if (urlParams.has(param)) {
+                    utmParams[param] = urlParams.get(param);
+                }
+            });
+
+            // If UTM parameters exist, append them to all Calendly links
+            if (Object.keys(utmParams).length > 0) {
+                const utmString = new URLSearchParams(utmParams).toString();
+                document.querySelectorAll('a[href*="calendly.com"]').forEach(link => {
+                    const url = new URL(link.href);
+                    url.search = url.search ? url.search + '&' + utmString : '?' + utmString;
+                    link.href = url.toString();
+                });
+
+                // Track UTM parameters in Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'utm_tracking', {
+                        'event_category': 'campaign',
+                        'utm_source': utmParams.utm_source || '',
+                        'utm_medium': utmParams.utm_medium || '',
+                        'utm_campaign': utmParams.utm_campaign || ''
+                    });
+                }
+            }
+        })();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.problem-card, .benefit-card, .testimonial-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Counter animation for stats
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = counter.textContent;
+                if (!isNaN(target)) {
+                    let current = 0;
+                    const increment = target / 100;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            counter.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = Math.floor(current);
+                        }
+                    }, 20);
+                }
+            });
+        };
+
+        // Modal functionality with Google Analytics tracking
+        const modal = document.getElementById('bookingModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const bookingTriggers = document.querySelectorAll('.booking-trigger');
+        const proceedToBookingBtn = document.getElementById('proceedToBooking');
+        const contactWhatsAppBtn = document.getElementById('contactWhatsApp');
+
+        // Open modal when booking triggers are clicked
+        bookingTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                const location = this.getAttribute('data-location');
+
+                // Track modal open event in GA
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'modal_open', {
+                        'event_category': 'booking_modal',
+                        'event_label': location,
+                        'button_location': location
+                    });
+                }
+
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
+        });
+
+        // Close modal
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+
+            // Track modal close event in GA
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'modal_close', {
+                    'event_category': 'booking_modal',
+                    'event_label': 'close_button'
+                });
+            }
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
+            }
+        });
+
+        // Track "Proceed to Booking" button click
+        proceedToBookingBtn.addEventListener('click', function(e) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'proceed_to_calendly', {
+                    'event_category': 'booking_modal',
+                    'event_label': 'calendly_button',
+                    'value': 75 // Price value for potential conversion tracking
+                });
+            }
+            // Let the link navigate naturally
+        });
+
+        // Track WhatsApp button click in modal
+        contactWhatsAppBtn.addEventListener('click', function(e) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'contact_whatsapp_modal', {
+                    'event_category': 'booking_modal',
+                    'event_label': 'whatsapp_button'
+                });
+            }
+            // Let the link navigate naturally
+        });
+
+        // Track Instagram link click (social proof)
+        const instagramLink = document.getElementById('heroInstagramLink');
+        if (instagramLink) {
+            instagramLink.addEventListener('click', function(e) {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'social_proof_click', {
+                        'event_category': 'social_media',
+                        'event_label': 'instagram_hero',
+                        'platform': 'instagram'
+                    });
+                }
+                // Let the link navigate naturally
+            });
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoio Psicológico Comunitário - Rio de Janeiro | Alvaro Carvalho | CRP 06/176449</title>
+    <meta name="description" content="Apoio psicológico acessível para pessoas afetadas pela tragédia no Rio de Janeiro. Você não está sozinho.">
+    <meta name="keywords" content="apoio psicológico rio, trauma rio de janeiro, luto, ansiedade pós-violência, complexo alemão, penha">
+    <meta name="author" content="Alvaro Maximiano de Carvalho Júnior">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alvarocarvalhopsicologo.com.br/apoio-rio.html">
+    <meta property="og:title" content="Apoio Psicológico Comunitário - Rio de Janeiro">
+    <meta property="og:description" content="Você não está sozinho. Apoio psicológico para pessoas afetadas pela tragédia no Rio.">
+    <meta property="og:image" content="https://alvarocarvalhopsicologo.com.br/alvaro-psicologo.jpeg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apoio Psicológico Comunitário - Rio de Janeiro">
+    <meta name="twitter:description" content="Você não está sozinho. Apoio psicológico para pessoas afetadas pela tragédia no Rio.">
+    <meta name="twitter:image" content="https://alvarocarvalhopsicologo.com.br/alvaro-psicologo.jpeg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3PXBRC18K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ECJQ5S7FHR');
+    </script>
+
+    <style>
+        :root {
+            --primary-bg: #F4EFDB;
+            --text-dark: #3B1512;
+            --accent-green: #6A7700;
+            --accent-light: #8FA500;
+            --accent-hover: #D7CAB8;
+            --hero-bg: #f0e8d0;
+            --white: #ffffff;
+            --light-green: rgba(163, 184, 153, 0.15);
+            --shadow: rgba(59, 21, 18, 0.08);
+            --subtext: #8B8B7A;
+            --community-accent: #8B9B00;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--primary-bg);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--hero-bg) 0%, #f0e8d0 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-green);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            color: var(--accent-green);
+        }
+        
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .cta-btn {
+            background: var(--accent-green);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(106, 119, 0, 0.25);
+        }
+
+        .cta-btn:hover {
+            background: var(--community-accent);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(106, 119, 0, 0.35);
+            color: white;
+        }
+        
+        .cta-btn i {
+            font-size: 1.5rem;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--subtext);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .support-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .support-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(106, 119, 0, 0.15);
+        }
+        
+        .support-icon {
+            font-size: 3rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        .support-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .resource-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--accent-green);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(106, 119, 0, 0.15);
+        }
+        
+        .resource-icon {
+            font-size: 2.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        .resource-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .download-btn {
+            background: var(--light-green);
+            color: var(--accent-green);
+            padding: 10px 20px;
+            border: 2px solid var(--accent-green);
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .download-btn:hover {
+            background: var(--accent-green);
+            color: white;
+        }
+        
+        .about-section {
+            background: var(--white);
+        }
+        
+        .psychologist-photo {
+            border-radius: 20px;
+            box-shadow: 0 15px 40px var(--shadow);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--accent-green) 0%, var(--community-accent) 100%);
+            color: white;
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .heart-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: var(--accent-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .hero-thumbnail {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 1.5rem auto;
+            display: block;
+            box-shadow: 0 8px 25px var(--shadow);
+            border: 4px solid var(--white);
+        }
+
+        .highlight-box {
+            background: var(--light-green);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid var(--accent-green);
+            margin: 2rem 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        /* Google Reviews Badge */
+        .google-reviews-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .google-reviews-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .google-reviews-badge {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 0.85rem;
+            }
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: start;
+            gap: 12px;
+        }
+
+        .info-list i {
+            color: var(--accent-green);
+            font-size: 1.5rem;
+            margin-top: 2px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-link:hover {
+            background: var(--white);
+            transform: translateX(-5px);
+            color: var(--accent-green);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-description {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .cta-btn {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <a href="index.html" class="back-link">
+            <i class="bi bi-arrow-left"></i>
+            Voltar ao site principal
+          </a>
+          <div class="hero-badge">Apoio Comunitário</div>
+          <div class="heart-icon">
+              <i class="bi bi-heart-pulse"></i>
+          </div>
+          <h1 class="hero-title">Terapia para Lidar com Trauma e Ansiedade</h1>
+          <p class="hero-subtitle">Agende sua primeira consulta online. Comece a se sentir melhor, com segurança e sem sair de casa</p>
+          <img src="alvaro-thumb.jpg" alt="Alvaro Carvalho - Psicólogo" class="hero-thumbnail">
+          <!-- Google Reviews Trust Badge - Hero Section -->
+          <div style="background: rgba(255, 255, 255, 0.9); padding: 1.5rem 2rem; border-radius: 15px; max-width: 600px; margin: 2rem auto; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 1rem;">
+              <div style="display: flex; gap: 3px;">
+                <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.3rem;"></i>
+                <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.3rem;"></i>
+                <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.3rem;"></i>
+                <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.3rem;"></i>
+                <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.3rem;"></i>
+              </div>
+              <span style="font-weight: 600; font-size: 1.2rem; color: var(--text-dark);">5.0</span>
+              <span style="color: var(--subtext); font-size: 0.95rem;">• 21 avaliações no Google</span>
+            </div>
+            <p style="font-style: italic; color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1rem; line-height: 1.5;">
+              "Alvaro é um profissional espetacular! Desde o início, ele me fez sentir confortável e seguro durante as sessões, o que facilitou muito o meu processo de tratamento."
+            </p>
+            <p style="color: var(--accent-green); font-weight: 500; margin: 0; font-size: 0.9rem;">
+              — Melissa Gibson, paciente
+            </p>
+          </div>
+          <a href="https://wa.me/5511961163538?text=Olá,%20gostaria%20de%20agendar%20a%20primeira%20consulta%20-%20Apoio%20Rio" class="cta-btn" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'whatsapp_apoio_rio', {'event_category': 'apoio_comunitario', 'event_label': 'WhatsApp Click - Hero CTA', 'value': 150});">
+            <i class="bi bi-whatsapp"></i>
+            Agende a sua primeira consulta
+          </a>
+          <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">50 minutos de escuta acolhedora</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Understand Section -->
+  <section class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Entendemos o Que Você Está Sentindo</h2>
+      <p class="section-subtitle">É normal sentir medo, tristeza, raiva ou confusão após vivenciar ou testemunhar violência extrema. Suas reações são válidas.</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card">
+            <i class="bi bi-exclamation-triangle support-icon"></i>
+            <h3 class="support-title">Medo e Ansiedade</h3>
+            <p>Sensação constante de perigo, dificuldade para dormir, sobressaltos, preocupação excessiva com a segurança.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card">
+            <i class="bi bi-cloud-rain support-icon"></i>
+            <h3 class="support-title">Luto e Tristeza</h3>
+            <p>Perda de entes queridos, amigos ou vizinhos. Sentimento de vazio, choro frequente, dificuldade em aceitar a realidade.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card">
+            <i class="bi bi-lightning support-icon"></i>
+            <h3 class="support-title">Flashbacks e Memórias</h3>
+            <p>Lembranças intrusivas do que aconteceu, pesadelos, sensação de estar revivendo o momento traumático.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card">
+            <i class="bi bi-emoji-frown support-icon"></i>
+            <h3 class="support-title">Raiva e Revolta</h3>
+            <p>Sentimento de injustiça, raiva intensa, dificuldade em controlar emoções, irritabilidade.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card">
+            <i class="bi bi-person-x support-icon"></i>
+            <h3 class="support-title">Isolamento</h3>
+            <p>Vontade de se afastar das pessoas, dificuldade em confiar, sensação de que ninguém entende.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card">
+            <i class="bi bi-question-circle support-icon"></i>
+            <h3 class="support-title">Confusão e Desorientação</h3>
+            <p>Dificuldade em processar o que aconteceu, sensação de irrealidade, problemas de concentração.</p>
+          </div>
+        </div>
+      </div>
+      <div class="highlight-box mt-5">
+        <h4><i class="bi bi-info-circle" style="margin-right: 10px;"></i>Importante Saber</h4>
+        <p>Essas reações são <strong>normais</strong> diante de uma situação <strong>anormal</strong>. Você não está "fraco" ou "louco". Seu corpo e sua mente estão tentando processar um evento traumático. Buscar ajuda é um ato de coragem e autocuidado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Can Help Section -->
+  <section class="section-padding" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">Como Podemos Ajudar</h2>
+      <p class="section-subtitle">Oferecemos apoio psicológico especializado em trauma, luto e ansiedade pós-violência.</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img src="alvaro-psicologo.jpeg" alt="Alvaro Carvalho - Psicólogo CRP 06/176449" class="img-fluid psychologist-photo">
+        </div>
+        <div class="col-lg-6">
+          <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--accent-green);">Nossa Abordagem</h3>
+          <ul class="info-list">
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Primeira Escuta Acolhedora (50 minutos)</strong><br>
+                Um espaço seguro para você falar sobre o que está sentindo, sem pressão ou julgamento.
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Acompanhamento Acessível</strong><br>
+                Valores flexíveis de acordo com sua realidade financeira, para que o cuidado psicológico seja possível para você.
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Abordagem Fenomenológico-Existencial</strong><br>
+                Trabalhamos a partir da sua experiência única, acolhendo e compreendendo o seu modo de existir e os sentidos que você dá ao que viveu.
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Flexibilidade</strong><br>
+                Atendimento online (via Google Meet ou Whatsapp), conforme sua preferência e segurança.
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Encaminhamentos</strong><br>
+                Se necessário, podemos encaminhar para serviços públicos (CAPS, UBS) ou parceiros.
+              </div>
+            </li>
+          </ul>
+          <div class="mt-4">
+            <a href="https://wa.me/5511961163538?text=Olá,%20gostaria%20de%20agendar%20a%20primeira%20consulta%20-%20Apoio%20Rio" class="cta-btn" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'whatsapp_apoio_rio', {'event_category': 'apoio_comunitario', 'event_label': 'WhatsApp Click - How We Can Help', 'value': 150});">
+              <i class="bi bi-whatsapp"></i>
+              Falar com o Psicólogo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">O Que Dizem Nossos Pacientes</h2>
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <div style="display: inline-flex; align-items: center; gap: 10px; background: var(--light-green); padding: 12px 30px; border-radius: 50px; border: 2px solid var(--accent-green);">
+          <div style="display: flex; gap: 3px;">
+            <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.1rem;"></i>
+            <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.1rem;"></i>
+            <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.1rem;"></i>
+            <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.1rem;"></i>
+            <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 1.1rem;"></i>
+          </div>
+          <span style="font-weight: 600; font-size: 1.1rem; color: var(--text-dark);">5.0 no Google</span>
+          <span style="color: var(--subtext); font-size: 0.9rem;">• 21 avaliações</span>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card" style="text-align: left; border-left: 4px solid #FBBC04;">
+            <div style="display: flex; gap: 3px; margin-bottom: 1rem;">
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+            </div>
+            <p style="font-style: italic; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.6;">
+              "Alvaro é um profissional espetacular! Desde o início, ele me fez sentir confortável e seguro durante as sessões, o que facilitou muito o meu processo de tratamento. Sua atenção e assertividade são impressionantes, e sua capacidade de..."
+            </p>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-green); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+                M
+              </div>
+              <div>
+                <p style="font-weight: 600; margin: 0; color: var(--text-dark); font-size: 0.95rem;">Melissa Gibson</p>
+                <p style="color: var(--subtext); margin: 0; font-size: 0.85rem;">há 4 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card" style="text-align: left; border-left: 4px solid #FBBC04;">
+            <div style="display: flex; gap: 3px; margin-bottom: 1rem;">
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+            </div>
+            <p style="font-style: italic; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.6;">
+              "O Álvaro é um excelente profissional, estou com ele há mais de 4 anos e a forma que eu consigo me sentir mais leve e como ele aborda os temas sutilmente é maravilhosa, ele realmente tem um carinho e um zelo muito grande por todos os seus..."
+            </p>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-green); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+                R
+              </div>
+              <div>
+                <p style="font-weight: 600; margin: 0; color: var(--text-dark); font-size: 0.95rem;">Raphs Queiroz</p>
+                <p style="color: var(--subtext); margin: 0; font-size: 0.85rem;">há 3 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="support-card" style="text-align: left; border-left: 4px solid #FBBC04;">
+            <div style="display: flex; gap: 3px; margin-bottom: 1rem;">
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+              <i class="bi bi-star-fill" style="color: #FBBC04;"></i>
+            </div>
+            <p style="font-style: italic; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.6;">
+              "Álvaro é um excelente profissional que, mesmo quando me atendia pelo convênio, já se dedicava inteiramente ao vínculo comigo. Na psicoterapia, fizemos uma caminhada de muitas descobertas importantes durante uma fase decisiva da minha vida..."
+            </p>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-green); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+                A
+              </div>
+              <div>
+                <p style="font-weight: 600; margin: 0; color: var(--text-dark); font-size: 0.95rem;">André Santos</p>
+                <p style="color: var(--subtext); margin: 0; font-size: 0.85rem;">há 4 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Link to Google Reviews -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://www.google.com/search?q=alvaro+carvalho+psicologo" target="_blank" rel="noopener noreferrer" style="color: var(--accent-green ); text-decoration: none; font-weight: 600; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px;">
+          <i class="bi bi-google"></i>
+          Ver todas as 21 avaliações no Google
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Resources Section -->
+  <section class="section-padding" style="background: var(--light-green);">
+    <div class="container">
+      <h2 class="section-title">Recursos Gratuitos</h2>
+      <p class="section-subtitle">Materiais de apoio que você pode acessar agora mesmo, sem custo.</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="resource-card">
+            <i class="bi bi-file-earmark-text resource-icon"></i>
+            <h3 class="resource-title">Primeiros Socorros Emocionais</h3>
+            <p>Guia prático com técnicas simples para lidar com ansiedade aguda, flashbacks e crises de pânico.</p>
+            <a href="primeiros-socorros-emocionais.pdf" class="download-btn" download="Primeiros-Socorros-Emocionais.pdf" target="_blank">
+              <i class="bi bi-download"></i>
+              Baixar PDF
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="resource-card">
+            <i class="bi bi-heart-pulse resource-icon"></i>
+            <h3 class="resource-title">Técnicas de Respiração</h3>
+            <p>Exercícios de respiração para acalmar o sistema nervoso e reduzir sintomas de ansiedade.</p>
+            <a href="tecnicas-respiracao.pdf" class="download-btn" download="Tecnicas-Respiracao.pdf" target="_blank">
+              <i class="bi bi-download"></i>
+              Baixar PDF
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="resource-card">
+            <i class="bi bi-book resource-icon"></i>
+            <h3 class="resource-title">Entendendo o Luto</h3>
+            <p>Informações sobre o processo de luto e como cuidar de si mesmo durante esse período difícil.</p>
+            <a href="entendendo-o-luto.pdf" class="download-btn" download="Entendendo-o-Luto.pdf" target="_blank">
+              <i class="bi bi-download"></i>
+              Baixar PDF
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="highlight-box mt-5">
+        <h4><i class="bi bi-lightbulb" style="margin-right: 10px;"></i>Dica Importante</h4>
+        <p>Esses materiais são complementares, não substituem o acompanhamento psicológico. Se você está em crise aguda ou com pensamentos de autoagressão, busque ajuda imediata: CVV 188 (24h) ou SAMU 192.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Psychologist Section -->
+  <section class="section-padding about-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title">Quem Está Aqui Para Você</h2>
+          <img src="alvaro-thumb.jpg" alt="Alvaro Carvalho - Psicólogo" class="hero-thumbnail">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-dark);">Alvaro Carvalho</h3>
+          <p style="color: var(--accent-green); font-weight: 500; margin-bottom: 1.5rem;">Psicólogo Clínico - CRP 06/176449</p>
+          <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Sou psicólogo clínico com abordagem fenomenológico-existencial, com formação em saúde mental. Acredito que todos merecem acesso a cuidado psicológico de qualidade, especialmente em momentos de crise.</p>
+          <p style="font-size: 1.1rem; margin-bottom: 2rem;">Esta iniciativa nasceu do compromisso de estar presente para minha comunidade. Não estou aqui para lucrar com a dor alheia, mas para oferecer o que sei fazer de melhor: escutar, acolher e ajudar pessoas a reconstruírem sua saúde mental.</p>
+          <div style="background: var(--light-green); padding: 1.5rem; border-radius: 15px; display: inline-block;">
+            <p style="margin: 0; font-weight: 500;"><i class="bi bi-geo-alt-fill" style="color: var(--accent-green); margin-right: 8px;"></i>Atendendo: Rio de Janeiro e região</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding cta-section">
+    <div class="container text-center">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: white;">Dê o Primeiro Passo</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto; opacity: 0.95;">Você não precisa passar por isso sozinho. Entre em contato agora e agende sua primeira consulta. Sem compromisso, sem julgamento, apenas acolhimento.</p>
+      <a href="https://wa.me/5511961163538?text=Olá,%20gostaria%20de%20agendar%20a%20primeira%20consulta%20-%20Apoio%20Rio" class="cta-btn" style="background: white; color: var(--accent-green);" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'whatsapp_apoio_rio', {'event_category': 'apoio_comunitario', 'event_label': 'WhatsApp Click - Bottom CTA', 'value': 150});">
+        <i class="bi bi-whatsapp"></i>
+        Falar Agora pelo WhatsApp
+      </a>
+      <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.9;">Resposta rápida | Atendimento confidencial</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: var(--text-dark); color: white; padding: 3rem 0; text-align: center;">
+    <div class="container">
+      <p style="margin-bottom: 1rem; font-size: 1.1rem; font-weight: 500;">Alvaro Carvalho - Psicólogo Clínico</p>
+      <p style="margin-bottom: 1rem; opacity: 0.8;">CRP 06/176449</p>
+      <p style="margin-bottom: 1.5rem; opacity: 0.8;">Apoio Psicológico Comunitário - Rio de Janeiro</p>
+      <div style="margin-bottom: 1.5rem;">
+        <a href="https://www.instagram.com/alvarocarvalho.psi/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; margin: 0 10px; text-decoration: none;">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511961163538" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; margin: 0 10px; text-decoration: none;">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+      <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.5rem;">Esta é uma iniciativa de apoio comunitário.</p>
+      <p style="font-size: 0.9rem; opacity: 0.7;"><a href="index.html" style="color: var(--accent-light); text-decoration: none;">Voltar ao site principal</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5511961163538?text=Olá,%20gostaria%20de%20agendar%20a%20primeira%20consulta%20-%20Apoio%20Rio" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Falar no WhatsApp" onclick="gtag('event', 'whatsapp_apoio_rio', {'event_category': 'apoio_comunitario', 'event_label': 'WhatsApp Click - Floating Button', 'value': 150});">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Floating Google Reviews Badge -->
+  <a href="https://www.google.com/search?q=alvaro+carvalho+psicologo" class="google-reviews-badge" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-google" style="color: #4285F4; font-size: 1.2rem;"></i>
+    <div style="display: flex; gap: 3px;">
+      <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 0.9rem;"></i>
+      <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 0.9rem;"></i>
+      <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 0.9rem;"></i>
+      <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 0.9rem;"></i>
+      <i class="bi bi-star-fill" style="color: #FBBC04; font-size: 0.9rem;"></i>
+    </div>
+    <span style="font-weight: 600; color: var(--text-dark );">5.0</span>
+    <span style="color: var(--subtext); font-size: 0.85rem;">(21)</span>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
