@@ -945,29 +945,63 @@
       }
     });
 
-    // PARTE 5: Quando enviar o formulário
-    document.getElementById('leadForm').addEventListener('submit', function (e) {
-      e.preventDefault(); // Impede recarregar a página
+    document.getElementById('leadForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
 
-      // Captura os dados
-      const dados = {
-        nome: document.getElementById('nome').value,
-        sobrenome: document.getElementById('sobrenome').value,
-        email: document.getElementById('email').value,
-        pdf: pdfSelecionado
-      };
+        const submitBtn = document.querySelector('.submit-btn');
+        const mensagemSucesso = document.getElementById('mensagem-sucesso');
 
-      console.log('Dados capturados:', dados);
+        // Captura os dados
+        const dados = {
+          nome: document.getElementById('nome').value,
+          sobrenome: document.getElementById('sobrenome').value,
+          email: document.getElementById('email').value,
+          pdf: pdfSelecionado
+        };
 
-      // Por enquanto só mostra mensagem
-      alert('Formulário funcionando! Dados: ' + JSON.stringify(dados));
+        // Desabilita botão durante envio
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
 
-      // Fecha o modal
-      modal.style.display = 'none';
+        try {
+          // Envia para o backend
+          const response = await fetch('http://alvarocarvalhopsicologo.com.br/api/lead', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dados)
+          });
 
-      // Limpa o formulário
-      document.getElementById('leadForm').reset();
-    });
+          const resultado = await response.json();
+
+          if (resultado.sucesso) {
+            // Mostra mensagem de sucesso
+            mensagemSucesso.style.display = 'block';
+
+            // Aguarda 2 segundos
+            setTimeout(() => {
+              // Baixa o PDF
+              window.location.href = `http://alvarocarvalhopsicologo.com.br${resultado.pdfUrl}`;
+
+              // Fecha modal e reseta formulário
+              modal.style.display = 'none';
+              document.getElementById('leadForm').reset();
+              mensagemSucesso.style.display = 'none';
+            }, 2000);
+          } else {
+            alert('Erro: ' + resultado.erro);
+          }
+
+        } catch (erro) {
+          console.error('Erro ao enviar:', erro);
+          alert('Erro ao processar sua solicitação. Tente novamente.');
+        } finally {
+          // Reabilita botão
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Enviar e Baixar PDF';
+        }
+      });
   </script>
 
 </body>
